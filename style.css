@@ -2,9 +2,10 @@ body {
     font-family: 'Changa One', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(https://i.imgur.com/FW6Ol49.jpeg); 
+    background: url(https://i.imgur.com/FW6Ol49.jpeg) no-repeat center center fixed; 
+    background-size: cover;
     color: #d4a276;
-} 
+}
 .changa-one-regular {
     font-family: "Changa One", sans-serif;
     font-weight: 400;
