@@ -1,0 +1,26 @@
+ .button-container {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 50vh; /* Adjust as needed */   
+        margin-top: -50px;
+    }
+    
+    .styled-button {
+        background-color: #d4a276; 
+        backdrop-filter: blur(3px);
+        color: #333;
+        border: none;
+        padding: 12px 24px;
+        font-family: "Changa One", sans-serif; 
+        font-size: 30px; 
+        font-weight: 900;
+        border-radius: 6px; 
+        cursor: pointer;
+        transition: 0.3s; 
+        text-decoration: none; 
+    }
+    
+    .styled-button:hover {
+        10:07 pm 14/03/2025	
+    } 

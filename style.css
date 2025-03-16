@@ -1,0 +1,212 @@
+body { 
+    font-family: 'Changa One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(https://i.imgur.com/FW6Ol49.jpeg); 
+    color: #d4a276;
+} 
+.changa-one-regular {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* navbar */
+nav {
+    background: #f3D5B5;
+    padding: 15px;
+    display: flex;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; 
+}
+
+/* hero section */
+/* Wrap images for better positioning */
+.image-container {
+    position: absolute;
+    top: 80px; /* Moves images up */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: none;
+}
+
+.image-container img {
+    width: 150px; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ensure header has relative positioning */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 80px 50px;
+}
+
+/* Make sure title and subheading are centered */
+header h1 {
+    font-size: 90px; 
+    font-family: "changa one", sans-serif;
+    text-transform: uppercase; 
+    margin-bottom: auto;
+    margin-top: 200px; /* Push it down to make space for images */
+}
+
+header .subheading-container { 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    line-height: 1; 
+}
+
+header .subheading-container p {
+    margin: 2px 0; /* Reduces space between names */
+    line-height: 1; /* Ensures tighter spacing */
+}
+
+
+
+/* Adjust button alignment */
+.btn{
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* about section */
+.container {
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container img {
+    width: 200px;
+    border-radius: 10px; 
+    align-items: center;
+}
+
+/* grid layout */
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);    
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px; /* Add some spacing inside the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly visible border */    
+    width: 250px; 
+    height: 50%;
+}
+
+.card img, .card video {
+    width: 100%;  
+    height: 50%;
+    border-radius: 15px;
+}
+
+/* contact section */
+.contact-info p {
+    font-size: 18px;
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* for tablets */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        width: 150px;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* for mobile phones */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container img {
+        width: 120px;
+    }
+
+    .btn {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 16px;
+    }  
+    
+    
+}
