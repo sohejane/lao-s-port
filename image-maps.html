@@ -1,122 +1,148 @@
-<!-- promise to clients -->  
-<title>Nacorda &amp; Wenceslao's Portfolio</title>
+<!-- image maps -->  
+<title>nacorda & wenceslao's portfolio</title>
 <link rel="icon" href="icon.png" type="image/x-icon">
 <link rel="stylesheet" href="style.css">  
+
 <style> 
-  img{ 
+  img { 
       width: 100%;
       height: auto; 
   }   
-  .container-wrapper{ 
+
+  .container-wrapper { 
       display: flex; 
       flex-wrap: wrap;
       justify-content: center;   
       margin: auto; 
-      gap: 10px;  
-      max-width: 800px;
+      gap: 1px;  
+      max-width: 500px;
   }
-  .container{ 
-    text-align: center;  
-    position: relative;
-    gap: 15px;
+
+  .container { 
+      text-align: center;  
+      position: relative;
   }  
+
+  /* styles for the links below the image maps */
+  .links {
+      margin-top: 280px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      position: absolute;
+  }
+
+  .links a {
+      background-color: #d4a276; 
+      color: #333;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+  }
+
+  .links a:hover {
+      background-color: #e7c3a3;
+  }
+
+  /* dropdown menu styles */
   .dropdown {
-        position: relative;
-        display: inline-block; 
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        margin-top: 30px; 
-        }
+      position: relative;
+      display: inline-block; 
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      margin-top: 50px; 
+  }
 
-        .dropdown-button {
-        background-color: #d4a276; 
-        backdrop-filter: blur(3px);
-        color: #333;
-        border: none;
-        padding: 12px 24px;
-        font-family: "Changa One", sans-serif; 
-        font-size: 30px; 
-        font-weight: 900;
-        border-radius: 6px; 
-        cursor: pointer;
-        transition: 0.3s; 
-        text-decoration: none;
-        }
+  .dropdown-button {
+      background-color: #d4a276; 
+      backdrop-filter: blur(3px);
+      color: #333;
+      border: none;
+      padding: 12px 24px;
+      font-family: "changa one", sans-serif; 
+      font-size: 30px; 
+      font-weight: 900;
+      border-radius: 6px; 
+      cursor: pointer;
+      transition: 0.3s; 
+      text-decoration: none;
+  }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #fff;
-            min-width: 120px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            padding: 8px 0;
-        }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 120px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      padding: 8px 0;
+  }
 
-        .dropdown-content a {
-            color: #333;
-            padding: 10px 16px;
-            text-decoration: none;
-            display: block;
-        }
+  .dropdown-content a {
+      color: #333;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+  }
 
-        .dropdown-content a:hover {
-            background: #e7c3a3;
-        }
+  .dropdown-content a:hover {
+      background: #e7c3a3;
+  }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
 </style>
+
 <section id="image-maps">
     <h2>image maps</h2> 
     <div class="container-wrapper">
-        
-        <!-- Image 1 -->
+
+        <!-- image 1 -->
         <div class="container">   
             <img src="https://i.pinimg.com/736x/8e/99/71/8e997144ef30c2933a1cf6e5104e434a.jpg" usemap="#image-map1" alt="clickable-image1"> 
             <map name="image-map1">
-                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank" alt="Link 1">
-                <area shape="circle" coords="300,200,50" href="https://en.wikipedia.org/wiki/Pinterest" target="_blank" alt="Link 2">
+                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank" alt="link 1">
+                <area shape="circle" coords="300,200,50" href="https://en.wikipedia.org/wiki/Pinterest" target="_blank" alt="link 2">
             </map>
+            <div class="links">
+                <a href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank">pinterest link</a>
+                <a href="https://en.wikipedia.org/wiki/Pinterest" target="_blank">wikipedia link</a>
+            </div>
         </div>
 
-        <!-- Image 2 -->
+        <!-- image 2 -->
         <div class="container"> 
-            <img src="https://i.pinimg.com/736x/fd/e6/85/fde6852487d8674827da13b7312b2b94.jpg" usemap="#image-map2" alt="clickable-image2"> 
+            <img src="https://i.pinimg.com/736x/57/e0/cc/57e0cca59f7fd2d669522bcfe928a4ed.jpg" usemap="#image-map2" alt="clickable-image2"> 
             <map name="image-map2">
-                <area shape="circle" coords="300,200,50" href="https://www.introducingparis.com/" target="_blank" alt="Link 1"> 
-                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank" alt="Link 2">
+                <area shape="circle" coords="300,200,50" href="https://www.introducingparis.com/" target="_blank" alt="link 1"> 
+                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank" alt="link 2">
             </map> 
+            <div class="links">
+                <a href="https://www.introducingparis.com/" target="_blank">paris info</a>
+                <a href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank">pinterest link</a>
+            </div>
         </div>
-
-        <!-- Image 3 -->
-        <div class="container">  
-            <img src="https://i.pinimg.com/736x/57/e0/cc/57e0cca59f7fd2d669522bcfe928a4ed.jpg" usemap="#image-map3" alt="clickable-image3"> 
-            <map name="image-map3">
-                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/335799715971057794/" target="_blank" alt="Link 1">
-                <area shape="circle" coords="300,200,50" href="https://www.example.com" target="_blank" alt="Link 2"> 
-                <!-- Replace the broken link with a valid URL -->
-            </map>  
-        </div>  
 
     </div>
 </section>
 
-     
-    <div class="dropdown">
-      <button class="dropdown-button">Home</button>
-      <div class="dropdown-content">
-          <a href="about.html">About</a>
-          <a href="fav-emojis.html">fav-emojis</a> 
-          <a href="google-map.html">google-map</a>
-          <a href="iframes.html">iframe</a>
-          <a href="image-maps.html">image-maps</a>
-          <a href="social-media.html">social-media</a>
-          <a href="special-char.html">special-char</a> 
-          <a href="youtube videos.html">youtube videos</a> 
-          <a href="home.html">Home</a>
-      </div>
-  </div> 
-    </section>
+<div class="dropdown">
+    <button class="dropdown-button">home</button>
+    <div class="dropdown-content">
+        <a href="about.html">about</a>
+        <a href="fav-emojis.html">fav-emojis</a> 
+        <a href="google-map.html">google-map</a>
+        <a href="iframes.html">iframe</a>
+        <a href="image-maps.html">image-maps</a>
+        <a href="social-media.html">social-media</a>
+        <a href="special-char.html">special-char</a> 
+        <a href="youtube videos.html">youtube videos</a> 
+        <a href="home.html">home</a>
+    </div>
+</div>
