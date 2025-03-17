@@ -9,6 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">  
+    
+    <style>
+    @media (max-width: 480px) {
+    .image-container {
+        flex-wrap: nowrap; /* ensures they stay in one row */
+        overflow-x: auto; /* adds horizontal scroll if they don’t fit */
+        justify-content: center; /* keeps them centered */
+        padding: 10px; /* adds spacing for better layout */
+        margin-top: -50px;
+    }
+
+    .image-container img {
+        width: 80px; /* adjust as needed */
+        height: 100px;
+        flex-shrink: 0; /* prevents images from shrinking too much */
+    }
+}
+      nav {
+        padding: 10px;
+      }
+      h1 {
+        position: relative;
+        top: -150px;
+        display: block;
+      }
+      .subheading-container {
+        position: relative;
+        top: -150px;
+        display: block;
+      }
+    </style>
 </head>
 <body>
 
@@ -36,7 +67,7 @@
             <img src="https://i.imgur.com/n6V5wqQ.jpeg" alt="tie">
             <img src="https://i.imgur.com/KZVI9M9.jpeg" alt="ribbon">
         </div>
-    
+
         <h1>PORTFOLIO</h1>
         <div class="subheading-container">
             <p><b>CREATOR NAMES</b></p>
@@ -46,4 +77,4 @@
     </header>
 
 </body>
-</html>
+    </html>
