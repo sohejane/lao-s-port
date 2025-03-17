@@ -12,12 +12,15 @@ iframe{
     height: 500px;
     display: flex;
     position: relative; /* Ensures absolute positioning inside works */
-}.dropdown {
-    position: absolute; 
-    bottom: calc(100% - 1050px); /* Keeps it just above the grid */
-    left: 50%;
-    transform: translateX(-50%);
 }
+  .dropdown {
+        position: relative;
+        display: inline-block; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 50px; 
+        }
 
         body { 
             backdrop-filter: blur(4px); 
