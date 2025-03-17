@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet"> 
-  
+
   <style>
   body {
     background: url(https://i.imgur.com/w9MXz8A.jpeg)  no-repeat center center/cover;
@@ -24,7 +24,7 @@
             font-size: 50px; 
 
   }  
-  
+
   a {   
     font-family: "Changa One", sans-serif; 
     font-size: 90px; 
@@ -37,14 +37,26 @@
     transition: color 0.3s ease-in-out;
     -webkit-text-stroke: 1px #F5DEB3;
   }
-      
+
 
         a:hover {
             color: #d4a276; 
             -webkit-text-stroke: 1px #4E342E;
 
   }
-  
+  @media (max-width: 768px) { /* Para sa tablets and smaller screens */
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) { /* Para sa mobile phones */
+    a {
+        font-size: 80px;
+    }
+
+
+
   </style>
 </head>
 <body>
