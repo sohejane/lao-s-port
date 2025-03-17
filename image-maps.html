@@ -55,7 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center; 
-      margin-top: 50px; 
+      margin-top: 10px; 
   }
 
   .dropdown-button {
@@ -96,40 +96,81 @@
 
   .dropdown:hover .dropdown-content {
       display: block;
-  }
+  }   
+  body {
+    background: url(https://i.imgur.com/FW6Ol49.jpeg) no-repeat center center fixed; 
+    display: flex; 
+    backdrop-filter: blur(3px); 
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+  }  
 </style>
 
 <section id="image-maps">
     <h2>image maps</h2> 
     <div class="container-wrapper">
 
-        <!-- image 1 -->
-        <div class="container">   
-            <img src="https://i.pinimg.com/736x/8e/99/71/8e997144ef30c2933a1cf6e5104e434a.jpg" usemap="#image-map1" alt="clickable-image1"> 
-            <map name="image-map1">
-                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank" alt="link 1">
-                <area shape="circle" coords="300,200,50" href="https://en.wikipedia.org/wiki/Pinterest" target="_blank" alt="link 2">
-            </map>
-            <div class="links">
-                <a href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank">pinterest link</a>
-                <a href="https://en.wikipedia.org/wiki/Pinterest" target="_blank">wikipedia link</a>
-            </div>
-        </div>
+      <!-- Image 1 -->
+<div class="container-wrapper">
+    <div class="container">   
+        <img id="clickable-image1" src="https://i.pinimg.com/736x/8e/99/71/8e997144ef30c2933a1cf6e5104e434a.jpg" usemap="#image-map1" alt="clickable-image1"> 
 
-        <!-- image 2 -->
-        <div class="container"> 
-            <img src="https://i.pinimg.com/736x/57/e0/cc/57e0cca59f7fd2d669522bcfe928a4ed.jpg" usemap="#image-map2" alt="clickable-image2"> 
-            <map name="image-map2">
-                <area shape="circle" coords="300,200,50" href="https://www.introducingparis.com/" target="_blank" alt="link 1"> 
-                <area shape="rect" coords="34,44,270,350" href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank" alt="link 2">
-            </map> 
-            <div class="links">
-                <a href="https://www.introducingparis.com/" target="_blank">paris info</a>
-                <a href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank">pinterest link</a>
-            </div>
-        </div>
-
+        <map name="image-map1">
+            <area id="top-half-1" shape="rect" coords="0,0,100,50" href="https://ph.pinterest.com/pin/455848793552679654/" target="_blank" alt="Top Half - Pinterest Link">
+            <area id="bottom-half-1" shape="rect" coords="0,50,100,100" href="https://en.wikipedia.org/wiki/Pinterest" target="_blank" alt="Bottom Half - Wikipedia Link">
+        </map>
     </div>
+</div>
+
+<!-- Image 2 -->
+<div class="container-wrapper">
+    <div class="container">   
+        <img id="clickable-image2" src="https://i.pinimg.com/736x/57/e0/cc/57e0cca59f7fd2d669522bcfe928a4ed.jpg" usemap="#image-map2" alt="clickable-image2"> 
+
+        <map name="image-map2">
+            <area id="top-half-2" shape="rect" coords="0,0,100,50" href="https://ph.pinterest.com/pin/301600506314346264/" target="_blank" alt="Top Half - Pinterest Link">
+            <area id="bottom-half-2" shape="rect" coords="0,50,100,100" href="https://www.introducingparis.com/" target="_blank" alt="Bottom Half - Other Link">
+        </map>
+    </div>
+</div>
+
+<script>
+    function adjustImageMap1() {
+        var img = document.getElementById('clickable-image1');
+        var width = img.clientWidth;
+        var height = img.clientHeight;
+
+        // Adjust coordinates dynamically based on image size
+        document.getElementById('top-half-1').coords = `0,0,${width},${height / 2}`;
+        document.getElementById('bottom-half-1').coords = `0,${height / 2},${width},${height}`;
+    }
+
+    function adjustImageMap2() {
+        var img = document.getElementById('clickable-image2');
+        var width = img.clientWidth;
+        var height = img.clientHeight;
+
+        // Adjust coordinates dynamically based on image size
+        document.getElementById('top-half-2').coords = `0,0,${width},${height / 2}`;
+        document.getElementById('bottom-half-2').coords = `0,${height / 2},${width},${height}`;
+    }
+
+    // Run functions on load and resize
+    window.onload = function () {
+        adjustImageMap1();
+        adjustImageMap2();
+    };
+    window.onresize = function () {
+        adjustImageMap1();
+        adjustImageMap2();
+    };
+</script>
+    </div> 
+    <p>(click top-half of the images for the first link, bottom-half for second link.)<br> 
+        <h2>Paris</h2>   
+        <p><strong>Paris is worth visiting for its romantic vibes, splendid boulevards, cool nightlife, and top-notch fashion boutiques. <br>Architecture geeks will love the breathtaking Eiffel Tower; nature admirers  
+            – the Tuileries Gardens; food fans – the world-class cuisine, and culture vultures – the Louvre.</strong></p>
 </section>
 
 <div class="dropdown">
