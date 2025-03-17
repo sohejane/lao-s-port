@@ -14,12 +14,19 @@ iframe{
     position: relative; /* Ensures absolute positioning inside works */
 }.dropdown {
     position: absolute; 
-    bottom: calc(100% - 500px); /* Keeps it just above the grid */
+    bottom: calc(100% - 690px); /* Keeps it just above the grid */
     left: 50%;
     transform: translateX(-50%);
 }
 
-
+body {
+    background: url(https://i.imgur.com/FW6Ol49.jpeg) no-repeat center center fixed; 
+    display: flex; 
+    backdrop-filter: blur(3px); 
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+  }  
 
 
 
@@ -62,10 +69,23 @@ iframe{
 
         .dropdown:hover .dropdown-content {
             display: block;
-        }
+        } 
+        .card {
+    background: rgba(255, 255, 255, 0.2);    
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px; /* Add some spacing inside the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly visible border */    
+    width: 550px; 
+    height: 80%;
+}
 </style>
     <section id="google-map">
-        <h2>google map showing our university</h2>
+        <h2>google map showing our university</h2> 
+        <p style="-webkit-text-stroke: .1px #4e4d2e;"><strong> a Chinese-Filipino school is a non-stock and non-profit private institution with quality graduates committed to serve the global communities.<br>
+        this is where we are currently studying as IT students.</strong></p>
         <div class="grid">
             <div class="card"> 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5918467547917!2d123.8960169!3d10.2944329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742051446014!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
