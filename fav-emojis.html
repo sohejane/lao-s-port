@@ -52,31 +52,33 @@
             display: block;
         }
 </style>
-  <section id="our-favorite-emojis">
-    <h2 style="text-align: center;"><strong>Our Favorite Emojis</strong></h2>
+ <section id="our-favorite-emojis">
+    <h2 style="text-align: center; color: #333;"><strong>Our Favorite Emojis</strong></h2>
 
-    <div class="grid" style="display: flex; justify-content: center; gap: 50px; margin-top: 20px;">
-        <div class="card" style="background: rgba(255, 255, 255, 0.2); padding: 20px; border-radius: 10px; text-align: center; width: 300px;">
+    <div class="grid" style="display: flex; justify-content: center; gap: 50px; margin-top: 20px; flex-wrap: wrap;">
+        <div class="card" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; text-align: center; width: 300px;">
             <h3 style="color: #e7c3a3;">Hers</h3>
-            <p style="font-size: 50px;">&#128540; &#128548; &#129395;</p>
-            <p style="text-align: justify; line-height: 1.6; font-size: 14px;">
-                These are my favorite emojis because they express my personality and emotions well! 
-                The 😜 (winking tongue) represents my playful side, while 😤 (frustrated face) shows 
-                my determination and passion for what I do. Lastly, 🥳 (party face) captures my love for 
-                celebrations and fun moments!
-            </p>
+            <p style="font-size: 50px;">😜 😤 🥳</p>
         </div>
 
-        <div class="card" style="background: rgba(255, 255, 255, 0.2); padding: 20px; border-radius: 10px; text-align: center; width: 300px;">
+        <div class="card" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; text-align: center; width: 300px;">
             <h3 style="color: #e7c3a3;">His</h3>
-            <p style="font-size: 50px;">&#128526; &#128525; &#128572;</p>
-            <p style="text-align: justify; line-height: 1.6; font-size: 14px;">
-                My favorite emojis reflect my interests and vibes! 😎 (cool face) represents my chill and 
-                confident personality, while 😍 (heart eyes) symbolizes my admiration for tech and coding. 
-                The 🦊 (fox face) is my spirit animal—it’s smart, quick, and adventurous, just like me!
-            </p>
+            <p style="font-size: 50px;">😎 😍 🦊</p>
         </div>
     </div>
+
+    <!-- Separate container for the descriptions -->
+    <div class="description" style="max-width: 700px; margin: 30px auto; text-align: justify; font-size: 14px; color: #333; line-height: 1.6;">
+        <p>
+            These emojis represent our personalities! <strong>Hers:</strong> 😜 (winking tongue) reflects her playful side, 
+            😤 (frustrated face) shows her determination, and 🥳 (party face) expresses her love for fun!  
+            <br><br>
+            <strong>His:</strong> 😎 (cool face) represents his confidence, 😍 (heart eyes) his passion for tech, 
+            and 🦊 (fox) his adventurous and clever nature.
+        </p>
+    </div>
+</section>
+
 
     <div class="dropdown" style="margin-top: 30px;">
         <button class="dropdown-button">Home</button>
