@@ -50,14 +50,30 @@
 
     .dropdown:hover .dropdown-content {
         display: block;
-    }
+    } 
+    .card {
+    background: rgba(51, 43, 43, 0.2);    
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px; /* Add some spacing inside the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly visible border */    
+    width: 450px; 
+    height: 450%;
+}  
+.card video {
+    width: 100%;  
+    height: 150%;
+    border-radius: 15px;
+}
 </style>
 
 <section id="youtube">
     <h2>youtube videos</h2>
     <div class="grid">
-        <div class="card"><iframe width="250" src="https://www.youtube.com/embed/GWGbOjlJDkU?si=sVqPI33K8jhG8Hwn" frameborder="0"></iframe></div>
-        <div class="card"><iframe width="250" src="https://www.youtube.com/embed/k1vCrsZ80M4?si=sxtWaOMn9TlbD6Pt" frameborder="0"></iframe></div>
+        <div class="card"><iframe width="350" height= "300"src="https://www.youtube.com/embed/GWGbOjlJDkU?si=sVqPI33K8jhG8Hwn" frameborder="0"></iframe></div>
+        <div class="card"><iframe width="350" height= "300" src="https://www.youtube.com/embed/k1vCrsZ80M4?si=sxtWaOMn9TlbD6Pt" frameborder="0"></iframe></div>
     </div>
     <div class="dropdown">
         <button class="dropdown-button">Home</button>
